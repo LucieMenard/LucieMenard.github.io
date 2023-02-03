@@ -1,15 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <title>Trouvez votre prochain repas</title>
-    <link href="style/style.css" rel="stylesheet">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trouver un restaurant</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-<<<<<<< Updated upstream
-   Hello world
-=======
-test
->>>>>>> Stashed changes
+   <section class="header">
+        <nav>
+            <a href="index.html"><i class="fa fa-cutlery"></i></a>
+            <div class="nav-links">
+                <i class="menu_icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about_me.html">ABOUT ME</a></li>
+                </ul>
+            </div>
+            <i class="menu_icon" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Trouvons votre prochain repas</h1>
+            <h2>Vous êtes à la recherche d'un lieu pour vous régaler ce midi ?</h2>
+            <p>Ne cherchez plus, bienvenu sur ma page "Trouver mon prochain repas", <br> nous allons vous guider dans votre choix !</p>
+            <a href="#pick_a_place" class="redirection_button">Je veux trouver mon prochain repas...</a>
+        </div>
+
+        <section class="carousel" id="pick_a_place">
+            <ul class="carousel-items">
+                <li class="carousel-item">
+                    <div class="card">
+                        <h2 class="card-title">My awesome article</h2>
+                        <img src="https://placeimg.com/572/322/animals" />
+                        <div class="card-content">
+                            <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
+                            <a href="#" class="button">Réserver</a>
+                        </div>
+                </li>
+                <li class="carousel-item">
+                    <div class="card">
+                        <h2 class="card-title">Just another awesome article</h2>
+                        <img src="https://placeimg.com/572/322/animals" />
+                        <div class="card-content">
+                            <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
+                            <a href="#" class="button">Read more</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="carousel-item">
+                    <div class="card">
+                        <h2 class="card-title">Yet another awesome article</h2>
+                        <img src="https://placeimg.com/572/322/animals" />
+                        <div class="card-content">
+                            <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
+                            <a href="#" class="button">Read more</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+   </section>
+
+<!------------- JavaScript ------------->
+   <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-250px";
+        }
+   </script>
+
 </body>
 </html>
