@@ -7,72 +7,119 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a23a615c8b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <section class="header">
+
+    <header>
+        <a href="index.html"><i class="fa fa-cutlery fa-5x"></i></a>
         <nav>
-            <a href="index.html"><i class="fa fa-cutlery"></i></a>
-            <div class="nav-links">
-                <i class="menu_icon" onclick="hideMenu()"></i>
+            <span class="nav-links">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about_me.html">ABOUT ME</a></li>
                 </ul>
-            </div>
-            <i class="menu_icon" onclick="showMenu()"></i>
+            </span>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+    </header>
 
+   <section class="home">
         <div class="text-box">
             <h1>Trouvons votre prochain repas</h1>
             <h2>Vous êtes à la recherche d'un lieu pour vous régaler ce midi ?</h2>
             <p>Ne cherchez plus, bienvenu sur ma page "Trouver mon prochain repas", <br> nous allons vous guider dans votre choix !</p>
             <a href="#pick_a_place" class="redirection_button">Je veux trouver mon prochain repas...</a>
         </div>
-
-        <section class="carousel" id="pick_a_place">
-            <ul class="carousel-items">
-                <li class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title">My awesome article</h2>
-                        <img src="https://placeimg.com/572/322/animals" />
-                        <div class="card-content">
-                            <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
-                            <a href="#" class="button">Réserver</a>
-                        </div>
-                </li>
-                <li class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title">Just another awesome article</h2>
-                        <img src="https://placeimg.com/572/322/animals" />
-                        <div class="card-content">
-                            <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
-                            <a href="#" class="button">Read more</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title">Yet another awesome article</h2>
-                        <img src="https://placeimg.com/572/322/animals" />
-                        <div class="card-content">
-                            <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
-                            <a href="#" class="button">Read more</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-        </section>
    </section>
+
+   <!------- Carousel ----->
+    <section class="carousel" id="pick_a_place">
+        <ul class="carousel-items">
+            <li class="carousel-item">
+                <div class="card">
+                    <h2 class="card-title">My awesome article</h2>
+                    <img src="https://placeimg.com/572/322/animals" />
+                    <div class="card-content">
+                        <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
+                        <a href="#" class="button">Réserver</a>
+                    </div>
+            </li>
+            <li class="carousel-item">
+                <div class="card">
+                    <h2 class="card-title">Just another awesome article</h2>
+                    <img src="https://placeimg.com/572/322/animals" />
+                    <div class="card-content">
+                        <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+            </li>
+            <li class="carousel-item">
+                <div class="card">
+                    <h2 class="card-title">Yet another awesome article</h2>
+                    <img src="https://placeimg.com/572/322/animals" />
+                    <div class="card-content">
+                        <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!------ List of restaurants ------>
+    <section class="list">
+        <h1>Trouvez de l'inspiration dans notre sélection :</h1>
+        <p>Retrouvez ici notre sélection du moment de restaurant que nous avons appréciés.</p>
+
+        <div class="grid">
+            <div class="list-col">
+                <img href="https://www.google.com/maps/place/Fuji+Restaurant/@48.1113783,-1.6787381,740m/data=!3m2!1e3!4b1!4m5!3m4!1s0x480ede35b843dde3:0x2ed901ab3301d41e!8m2!3d48.1113747!4d-1.6765494" src="images/fuji.jpg">
+                <div class="restaurant-layer">
+                    <div class="restaurant-informations">
+                        <h3 >Le Fuji</h3>
+                        <p>plats japonais - bel endroit - €€</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-col">
+                <img href="https://www.google.com/maps/place/Fuji+Restaurant/@48.1113783,-1.6787381,740m/data=!3m2!1e3!4b1!4m5!3m4!1s0x480ede35b843dde3:0x2ed901ab3301d41e!8m2!3d48.1113747!4d-1.6765494" src="images/satio.jpg">
+                <div class="restaurant-layer">
+                    <div class="restaurant-informations">
+                        <h3>Satiõ</h3>
+                        <p>repas de saison - ambiance nature - €€</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-col">
+                <img href="https://www.google.com/maps/place/Fuji+Restaurant/@48.1113783,-1.6787381,740m/data=!3m2!1e3!4b1!4m5!3m4!1s0x480ede35b843dde3:0x2ed901ab3301d41e!8m2!3d48.1113747!4d-1.6765494" src="images/toast_it.jpg">
+                <div class="restaurant-layer">
+                    <div class="restaurant-informations">
+                        <h3 >Toast It</h3>
+                        <p> street food - fromage - €</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+    </footer>
 
 <!------------- JavaScript ------------->
    <script>
         var navLinks = document.getElementById("navLinks");
         function showMenu(){
-            navLinks.style.right = "0";
+            navLinks.style.visibility="visible";
         }
         function hideMenu(){
-            navLinks.style.right = "-250px";
+            navLinks.style.visibility="hidden";
         }
    </script>
 
