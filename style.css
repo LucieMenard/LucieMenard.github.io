@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    font-size: 10px;
 }
 
 body {
@@ -113,6 +114,88 @@ nav .fa {
     transition: 1s;
 }
 
+
+/* ------ Carousel ------- */
+.slider {
+    box-sizing: border-box;
+    width: 100rem;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+.slider_navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 0 1rem 0;
+    justify-content: center;
+}
+.slider_navigation a {
+    background: #ffb85f;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+}
+
+.slider_navigation a img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.slider_navigation a:hover {
+    background: #FCF4D9;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.slide {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+    background: #ffb85f;
+    transition: transform 0.5s;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide h1 img{
+    font-size: 3rem;
+    z-index: 2;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 0;
+}
+
+.slide img {
+    border-radius: 10px;
+    width: 95%;
+    height: 92%;
+    z-index: 1;
+    position: absolute;
+}
+
+.adress {
+    z-index: 3;
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-style: italic;
+    color: white;
+    bottom: 0;
+}
+
+.slides::-webkit-scrollbar {
+    display: none;
+}
 /* ------ list ------- */
 .list {
     margin: auto;
@@ -180,33 +263,6 @@ nav .fa {
     color: white;
 }
 
-/* ------ carousel ------- */
-.carousel-items {
-    display: flex;
-    overflow-x: scroll;
-    padding: 1rem 0;
-    scroll-snap-type: x mandatory;
-}
-.carousel-item {
-    margin-left: 1rem;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 450px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar {
-    height: 6px;
-    background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #3d4852;
-    border-radius: 3px;
-}
 
 /* ------ footer ------- */
 footer {

@@ -9,10 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a23a615c8b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <header>
-        <a href="index.html"><i class="fa fa-cutlery fa-5x"></i></a>
+        <a href="index.html"><i class="fa fa-cutlery fa-8x"></i></a>
         <nav>
             <span class="nav-links">
                 <i class="fa fa-times-circle" onclick="hideMenu()"></i>
@@ -34,40 +35,44 @@
         </div>
    </section>
 
-   <!------- Carousel ----->
-    <section class="carousel" id="pick_a_place">
-        <ul class="carousel-items">
-            <li class="carousel-item">
-                <div class="card">
-                    <h2 class="card-title">My awesome article</h2>
-                    <img src="https://placeimg.com/572/322/animals" />
-                    <div class="card-content">
-                        <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
-                        <a href="#" class="button">Réserver</a>
-                    </div>
-            </li>
-            <li class="carousel-item">
-                <div class="card">
-                    <h2 class="card-title">Just another awesome article</h2>
-                    <img src="https://placeimg.com/572/322/animals" />
-                    <div class="card-content">
-                        <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
-                        <a href="#" class="button">Read more</a>
-                    </div>
-                </div>
-            </li>
-            <li class="carousel-item">
-                <div class="card">
-                    <h2 class="card-title">Yet another awesome article</h2>
-                    <img src="https://placeimg.com/572/322/animals" />
-                    <div class="card-content">
-                        <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
-                        <a href="#" class="button">Read more</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </section>
+   <!------- Carousel ------>
+    <div class="slider">
+        <div class="slider_navigation">
+            <a href="#slide-1"><img src="images/pizza-slice.png" alt="Envie d'une pizza ?"></a>
+            <a href="#slide-2"><img src="images/salad.png" alt="Envie de plat de saison ?"></a>
+            <a href="#slide-3"><img src="images/sandwich.png" alt="Envie d'un sandwich ?"></a>
+            <a href="#slide-4"><img src="images/cheeseSandwich.png" alt="Envie d'un croc monsieur ?"></a>
+            <a href="#slide-5"><img src="images/ramen.png" alt="Envie d'une pizza ?"></a>
+        </div>
+        
+        <div class="slides">
+        <div class="slide" id="slide-1">
+            <h1><img src="https://chezgeppetto.com/wp-content/uploads/2018/11/GEPPETTO_LOGO.png" alt="Chez Gepetto"></h1>
+            <p class="adress">6 Rue Rallier du Baty, 35000 Rennes</p>
+            <img src="https://lh5.googleusercontent.com/p/AF1QipOmr-uK8i6vjyI5ua2T1BKpD_MreWGDHTPAVMAQ=s435-k-no">
+        </div>
+        <div class="slide" id="slide-2">
+            <h1><img src="https://satio-restaurant.fr/wp-content/uploads/2021/09/logo.svg" alt="Satiõ"></h1>
+            <p class="adress">32 Rue Vasselot, 35000 Rennes</p>
+            <img src="images/satio.png">
+        </div>
+        <div class="slide" id="slide-3">
+            <h1><img src="https://lh5.googleusercontent.com/p/AF1QipPd-bmUrrLwlzC0-BAbtCgN0rb3lbhpY8s6gFbW=w203-h114-k-no" alt="Mokka House Coffee"></h1>
+            <p class="adress">14 Rue le Bastard, 35000 Rennes</p>
+            <img src="images/mokkaCoffeeHouse.png">
+        </div>
+        <div class="slide" id="slide-4">
+            <h1><img src="//cdn.shopify.com/s/files/1/0637/3248/2307/files/logo-blanc_4x_6fc7de7d-cbd3-4c04-b731-1c346bc07f3b.png?v=1649236871&width=200" alt="Banco"></h1>
+            <p class="adress">13 Rue d'Antrain, 35000 Rennes</p>
+            <img src="images/banco.png">
+        </div>
+        <div class="slide" id="slide-5">
+            <h1><img src="https://lh5.googleusercontent.com/p/AF1QipPd-bmUrrLwlzC0-BAbtCgN0rb3lbhpY8s6gFbW=w203-h114-k-no" alt="Le Fuji"></h1>
+            <p class="adress">4 Rue Derval, 35000 Rennes</p>
+            <img src="images/leFuji.png">
+        </div>
+        </div>
+    </div>
 
     <!------ List of restaurants ------>
     <section class="list">
