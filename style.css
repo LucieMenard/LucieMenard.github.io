@@ -2,15 +2,27 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    color: var(--detail-color);
     font-size: 10px;
+    --bg-color: #F9E4D4;
+    --first-color : #D67D3E;
+    --second-color : #9C0F48;
+    --detail-color : #470D21;
 }
 
 body {
     min-height: 100vh;
     width: 100%;
-    background-color: #FCF4D9;
+    background-color: var(--bg-color);
     background-position: center;
     background-size: cover;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -30,7 +42,7 @@ p {
 /* ------ header ------- */
 header {
     width: 100%;
-    background-color: #cddb9d;
+    background-color: var(--first-color);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -38,10 +50,11 @@ header {
     flex-flow: row nowrap;
     padding: 1%;
     justify-content: space-between;
+    position: fixed;
 }
 
 .fa {
-    color: #FCF4D9;
+    color: var(--bg-color);
 }
 
 nav {
@@ -62,18 +75,18 @@ nav {
 }
 
 .nav-links ul li a {
-    color: #FCF4D9;
+    color: var(--bg-color);
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
 }
 
+
 .nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: #FCF4D9;
-    /* todo changer la couleur ?*/
+    background: var(--bg-color);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -88,20 +101,18 @@ nav .fa {
 }
 
 /* ------ home ------- */
-.home_text {
+.home {
+    display: block;
     width: 100%;
-    color: black;
     text-align: center;
     padding-top: 10%;
     padding-bottom: 10%;
-    /* TODO trouver comment créer une section qui prenne la largueur de l'écran et pas moins */
-}
+  }
 
 .redirection_button {
     display: inline-block;
     text-decoration: none;
-    color:black;
-    border: 1px solid black;
+    border: 1px solid var(--detail-color);
     padding: 12px 34px;
     font-size: 20px;
     font-weight: bold;
@@ -111,8 +122,7 @@ nav .fa {
 }
 
 .redirection_button:hover {
-    border: 1px solid #cddb9d;
-    background: #cddb9d;
+    background: var(--first-color);
     transition: 1s;
 }
 
@@ -136,7 +146,7 @@ nav .fa {
     justify-content: center;
 }
 .slider_navigation a {
-    background: #ffb85f;
+    background: var(--first-color);
     border-radius: 50%;
     margin: 0 0.5rem;
 }
@@ -147,7 +157,7 @@ nav .fa {
 }
 
 .slider_navigation a:hover {
-    background: #FCF4D9;
+    background: var(--bg-color);
 }
 
 .slides {
@@ -162,7 +172,7 @@ nav .fa {
     width: 1000px;
     height: 600px;
     border-radius: 10px;
-    background: #ffb85f;
+    background: var(--first-color);
     transition: transform 0.5s;
     display: flex;
     position: relative;
@@ -195,7 +205,7 @@ nav .fa {
     font-size: 2rem;
     font-weight: bolder;
     font-style: italic;
-    color: white;
+    color: var(--bg-color);
     bottom: 0;
 }
 
@@ -204,6 +214,7 @@ nav .fa {
 }
 /* ------ list ------- */
 .list {
+    display: block;
     margin: auto;
     text-align: center;
     padding: 2%;
@@ -259,21 +270,18 @@ nav .fa {
 }
 
 .restaurant-layer:hover {
-    background: rgba(117,149,100,0.7);
+    background: var(--first-color);
+    opacity: 70%;
 }
-.restaurant-layer:hover .restaurant-informations{
-    color: white;
-}
-
 
 /* ------ footer ------- */
 footer {
-    background-color: #cddb9d;
+    background-color: var(--first-color);
     width: auto;
     height: auto;
 }
 
-/* ------ medias ------- */
+/* ------ medias -------
 
 @media(max-width: 700px){
     * {
@@ -316,4 +324,4 @@ footer {
     .nav-links ul {
         padding: 30px;
     }
-}
+} */
