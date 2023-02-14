@@ -1,28 +1,29 @@
 *{
     margin: 0;
-    padding: 0;
     font-family: 'Poppins', sans-serif;
     color: var(--detail-color);
     font-size: 10px;
     --bg-color: #F9E4D4;
     --first-color : #D67D3E;
-    --second-color : #9C0F48;
-    --detail-color : #470D21;
+    --second-color : #D1512D;
+    --detail-color : #411530;
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     background-color: var(--bg-color);
     background-position: center;
     background-size: cover;
+    justify-content: center;
 }
 
 section {
     min-height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -51,6 +52,7 @@ header {
     padding: 1%;
     justify-content: space-between;
     position: fixed;
+    z-index: 100;
 }
 
 .fa {
@@ -81,7 +83,6 @@ nav {
     font-weight: bold;
 }
 
-
 .nav-links ul li::after {
     content: '';
     width: 0%;
@@ -102,12 +103,12 @@ nav .fa {
 
 /* ------ home ------- */
 .home {
-    display: block;
-    width: 100%;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     padding-top: 10%;
     padding-bottom: 10%;
-  }
+    font-size: 5rem;
+}
 
 .redirection_button {
     display: inline-block;
@@ -277,8 +278,8 @@ nav .fa {
 /* ------ footer ------- */
 footer {
     background-color: var(--first-color);
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 3rem;
 }
 
 /* ------ medias -------
