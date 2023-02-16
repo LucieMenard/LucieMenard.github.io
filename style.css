@@ -43,7 +43,7 @@ p {
 /* ------ header ------- */
 header {
     width: 100%;
-    background-color: var(--first-color);
+    background-image: linear-gradient(to right, var(--second-color), var(--first-color),var(--second-color), var(--first-color),var(--second-color), var(--first-color), var(--second-color));
     background-position: center;
     background-size: cover;
     position: relative;
@@ -109,33 +109,55 @@ nav .fa {
     padding-bottom: 10%;
     font-size: 5rem;
 }
+.home p {
+    justify-content: center;
+}
 
 .redirection_button {
     display: inline-block;
     text-decoration: none;
-    border: 1px solid var(--detail-color);
     padding: 12px 34px;
-    font-size: 20px;
+    font-size: 3rem;
     font-weight: bold;
-    background: transparent;
     position : relative;
     cursor: pointer;
+    background: transparent;
+    box-shadow: 2px 2px 7px var(--detail-color);
 }
 
-.redirection_button:hover {
+/* .redirection_button:hover {
     background: var(--first-color);
     transition: 1s;
-}
-
-.redirection_button:hover::after {
+    /* background-image: linear-gradient(to right, var(--second-color), var(--first-color), var(--second-color));
+} 
+*/
+/* .home button:hover::after {
     transition: 1s;
-}
+} */
+
+.home button::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: var(--first-color);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+
+.home button:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 /* ------ Carousel ------- */
 .slider {
     box-sizing: border-box;
-    width: 50rem;
-    height: 40rem;
+    width: 80rem;
+    height: 70rem;
     text-align: center;
     overflow: hidden;
   }
@@ -180,7 +202,7 @@ nav .fa {
     scroll-snap-align: start;
     flex-shrink: 0; 
     width: 100%;
-    height: 30rem; 
+    height: 50rem; 
     margin-right: 50px; 
     border-radius: 10px; 
     background: var(--first-color);
@@ -197,7 +219,7 @@ nav .fa {
 .slide h1 img{
     z-index: 2;
     position: absolute;
-    width: 10rem;
+    width: 20rem;
     height: auto;
     top: 5rem;
     left: 40%;
@@ -215,7 +237,7 @@ nav .fa {
 .adress {
     z-index: 3;
     position: absolute;
-    font-size: 1rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     font-style: italic;
     color: var(--bg-color);
