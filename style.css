@@ -121,15 +121,14 @@ nav .fa {
     box-shadow: 2px 2px 7px var(--detail-color);
 }
 
-/* .redirection_button:hover {
+.redirection_button:hover {
     background: var(--first-color);
     transition: 1s;
-    /* background-image: linear-gradient(to right, var(--second-color), var(--first-color), var(--second-color));
 } 
-*/
-/* .home button:hover::after {
+
+.home button:hover::after {
     transition: 1s;
-} */
+}
 
 .home button::before {  
     transform: scaleX(0);
@@ -281,28 +280,29 @@ nav .fa {
     transition: 1s;
 }
 
-.restaurant-informations h3 {
-    width: 100%;
+.restaurant-informations a h3{
     font-weight: bold;
     font-size: 26px;
-    top: 40%;
-    bottom: 48%;
+    top: 30%;
+    bottom: 70%;
+    right: 0%;
+    left: 0%;
     text-align: center;
     position: absolute;
     color: var(--bg-color);
     opacity: 100%;
 }
 
-.restaurant-informations p {
+.restaurant-informations a p {
     font-size: 20px;
     font-style: italic;
     top: 50%;
     bottom: 48%;
     text-align: center;
-    padding: 1%;
     position: absolute;
     color: var(--bg-color);
     opacity: 100%;
+    padding: 1%;
 }
 
 .restaurant-layer:hover {
