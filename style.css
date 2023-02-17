@@ -10,16 +10,11 @@
 }
 
 body {
-    min-height: 100%;
-    width: 100%;
     background-color: var(--bg-color);
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
 }
 
 section {
-    min-height: 100vh;
+    min-height: 90vh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -51,7 +46,8 @@ header {
     flex-flow: row nowrap;
     padding: 1%;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 100;
 }
 
@@ -176,10 +172,11 @@ nav .fa {
 }
 
 .slider_navigation a:active {
-    top: 1px;
+    border: var(--first-color);
 }
-.slider_navigation  a:focus {
-    background: #000;   
+
+.slider_navigation a:focus {
+    background: var(--bg-color);   
 }
 
 .slider_navigation a img {
@@ -196,13 +193,15 @@ nav .fa {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
 }
 
 .slides div {
     scroll-snap-align: start;
     flex-shrink: 0; 
     width: 100%;
-    height: 50rem; 
+    height: 70%; 
     margin-right: 50px; 
     border-radius: 10px; 
     background: var(--first-color);
@@ -249,26 +248,23 @@ nav .fa {
 }
 
 /* ------ list ------- */
-.list {
-    display: block;
-    margin: auto;
-    text-align: center;
-    padding: 2%;
-    width: 100%;
-}
-
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 1%;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
 }
 
 .grid-col {
-    flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+    border: none;
+}
+
+.grid-col img {
+    height: 100%;
+    width: 100%;
 }
 
 .restaurant-layer {
@@ -281,7 +277,8 @@ nav .fa {
 }
 
 .restaurant-informations {
-    color: transparent;
+    display: none;
+    transition: 1s;
 }
 
 .restaurant-informations h3 {
@@ -292,7 +289,8 @@ nav .fa {
     bottom: 48%;
     text-align: center;
     position: absolute;
-    transition: 0.5s;
+    color: var(--bg-color);
+    opacity: 100%;
 }
 
 .restaurant-informations p {
@@ -303,12 +301,17 @@ nav .fa {
     text-align: center;
     padding: 1%;
     position: absolute;
-    transition: 0.5s;
+    color: var(--bg-color);
+    opacity: 100%;
 }
 
 .restaurant-layer:hover {
     background: var(--first-color);
     opacity: 70%;
+}
+
+.restaurant-layer:hover .restaurant-informations {
+display: contents;
 }
 
 /* ------ footer ------- */
