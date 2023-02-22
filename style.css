@@ -7,6 +7,7 @@
     --first-color : #D67D3E;
     --second-color : #D1512D;
     --detail-color : #411530;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -38,7 +39,7 @@ p {
 /* ------ header ------- */
 header {
     width: 100%;
-    background-image: linear-gradient(to right, var(--second-color), var(--first-color),var(--second-color), var(--first-color),var(--second-color), var(--first-color), var(--second-color));
+    background-image: linear-gradient(to right, var(--second-color), var(--first-color),var(--second-color), var(--first-color));
     background-position: center;
     background-size: cover;
     position: relative;
@@ -104,6 +105,7 @@ nav .fa {
     padding-top: 10%;
     padding-bottom: 10%;
     font-size: 5rem;
+    background-color: var(--detail-color);
 }
 .home p {
     justify-content: center;
@@ -149,6 +151,9 @@ nav .fa {
   }
 
 /* ------ Carousel ------- */
+.carousel {
+    background-color: var(--detail-color);
+}
 .slider {
     box-sizing: border-box;
     width: 80rem;
@@ -253,7 +258,7 @@ nav .fa {
     gap: 5%;
 }
 
-.grid-col {
+.grid_col {
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
@@ -261,12 +266,12 @@ nav .fa {
     border: none;
 }
 
-.grid-col img {
+.grid_col img {
     height: 100%;
     width: 100%;
 }
 
-.restaurant-layer {
+.restaurant_layer {
     background: transparent;
     height: 100%;
     width: 100%;
@@ -274,13 +279,7 @@ nav .fa {
     top: 0;
     transition: 0.5s;
 }
-
-.restaurant-informations {
-    display: none;
-    transition: 1s;
-}
-
-.restaurant-informations a h3{
+.restaurant_layer a h3{
     font-weight: bold;
     font-size: 26px;
     top: 30%;
@@ -290,10 +289,12 @@ nav .fa {
     text-align: center;
     position: absolute;
     color: var(--bg-color);
-    opacity: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(-50%);
 }
 
-.restaurant-informations a p {
+.restaurant_layer a p {
     font-size: 20px;
     font-style: italic;
     top: 50%;
@@ -301,18 +302,26 @@ nav .fa {
     text-align: center;
     position: absolute;
     color: var(--bg-color);
-    opacity: 100%;
     padding: 1%;
+    opacity: 0;
+    transition: 0.5s;
 }
 
-.restaurant-layer:hover {
-    background: var(--first-color);
-    opacity: 70%;
+
+.restaurant_layer:hover {
+    background: rgb(209, 81, 45, 0.7);
 }
 
-.restaurant-layer:hover .restaurant-informations {
-display: contents;
+.restaurant_layer:hover a h3{
+    bottom: 49%;
+    opacity: 1;
 }
+
+.restaurant_layer:hover a p{
+    bottom: 49%;
+    opacity: 1;
+}
+
 
 /* ------ footer ------- */
 footer {
