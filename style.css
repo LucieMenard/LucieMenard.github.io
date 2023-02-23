@@ -15,7 +15,7 @@ body {
 }
 
 section {
-    min-height: 90vh;
+    min-height: 50vh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -101,10 +101,18 @@ nav .fa {
 
 /* ------ home ------- */
 #home {
+    background-color: var(--second-color);
+}
+
+.home_text {
+    width: 100%;
     justify-content: center;
     align-items: center;
     font-size: 5rem;
-    background-color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding-bottom: 15rem;
 }
 
 .home p {
@@ -148,26 +156,22 @@ nav .fa {
     transition: transform .3s ease;
 }
 
+/* ------ Transition ------- */
 .wave {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    overflow: hidden;
-    line-height: 0;
+}
+#wave_bottom {
     transform: rotate(180deg);
 }
 
 .wave svg {
     position: relative;
-    display: block;
     width: calc(100% + 1.3px);
     height: 150px;
 }
 
 .wave .shape-fill {
-    fill: var(--bg-color);
+    fill: var(--second-color);
 }
 
 /* ------ Carousel ------- */
