@@ -263,14 +263,16 @@ nav {
     font-size: 100px;
 }
 
-.slide h1 img {
+.slide h1 {
     z-index: 2;
     position: absolute;
-    width: 20rem;
+    width: 100%;
     height: auto;
-    top: 5rem;
-    left: 40%;
-    right: 60%;
+    top: 3rem;
+    font-size: 4rem;
+    font-weight: bolder;
+    font-style: italic;
+    color: var(--bg-color);
 }
 
 .slide img {
