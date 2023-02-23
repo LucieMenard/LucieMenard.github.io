@@ -112,6 +112,7 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 5rem;
+    display: flex;
     flex-direction: column;
     align-content: space-between;
     padding-bottom: 15rem;
