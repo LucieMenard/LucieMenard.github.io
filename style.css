@@ -319,7 +319,7 @@ nav .fa {
     left: 0%;
     text-align: center;
     position: absolute;
-    color: var(--bg-color);
+    color: var(--detail-color);
     opacity: 0;
     transition: 0.5s;
     transform: translateY(-50%);
@@ -332,7 +332,8 @@ nav .fa {
     bottom: 48%;
     text-align: center;
     position: absolute;
-    color: var(--bg-color);
+    color: var(--detail-color);
+    font-weight: bold;
     padding: 1%;
     opacity: 0;
     transition: 0.5s;
@@ -340,7 +341,7 @@ nav .fa {
 
 
 .restaurant_layer:hover {
-    background: rgb(209, 81, 45, 0.7);
+    background: rgb(245, 199, 169, 0.7);
 }
 
 .restaurant_layer:hover a h3 {
