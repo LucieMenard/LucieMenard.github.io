@@ -237,8 +237,8 @@ nav {
 
 .slider {
     box-sizing: border-box;
-    width: 80rem;
-    height: 70rem;
+    width: 70rem;
+    height: 50rem;
     text-align: center;
     overflow: hidden;
 }
@@ -251,18 +251,10 @@ nav {
     justify-content: center;
 }
 
-.slider_navigation a {
+.slider_navigation span {
     background: var(--first-color);
     border-radius: 50%;
     margin: 0 0.5rem;
-}
-
-.slider_navigation a:active {
-    border: var(--first-color);
-}
-
-.slider_navigation a:focus {
-    background: var(--bg-color);
 }
 
 .slider_navigation a img {
@@ -270,24 +262,18 @@ nav {
     height: 4rem;
 }
 
-.slider_navigation a:hover {
+.slider_navigation span:hover {
     background: var(--bg-color);
 }
 
-.slides {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    height: 100%;
-    width: 100%;
+.slider_navigation span:active {
+    background: var(--bg-color);
+    border: var(--first-color);
 }
 
-.slides div {
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 100%;
-    height: 70%;
+.slider {
+    width: 70%;
+    position: relative;
     margin-right: 5rem;
     border-radius: 1rem;
     background: var(--first-color);
@@ -295,44 +281,46 @@ nav {
     transform: scale(1);
     transition: transform 0.5s;
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 10rem;
+  }
+
+.slider slide:first-child {
+    z-index: 1;
+  }
+  
+.slider slide:nth-child(2) {
+    z-index: 0;
+  }
+
+.slide img {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .slide h1 {
-    z-index: 2;
     position: absolute;
     width: 100%;
     height: auto;
-    top: 3rem;
+    bottom: 4rem;
     font-size: 4rem;
     font-weight: bolder;
     font-style: italic;
     color: var(--bg-color);
 }
 
-.slide img {
-    border-radius: 10px;
-    width: 95%;
-    height: 92%;
-    z-index: 1;
-    position: absolute;
-}
-
 .adress {
-    z-index: 3;
     position: absolute;
     font-size: 2.5rem;
     font-weight: bolder;
     font-style: italic;
     color: var(--bg-color);
     bottom: 0;
-}
-
-.slides::-webkit-scrollbar {
-    display: none;
+    right: 0;
+    left: 0;
 }
 
 /* ------ list ------- */
@@ -445,7 +433,7 @@ footer {
 
 .footer_links {
     align-items: center;
-    padding: 1% 6%
+    padding: 1% 1%
 }
 
 .footer_links {
@@ -495,11 +483,15 @@ footer {
         height: 200px;
     }
 
-    /* .grid {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        gap: 5%;
-    } */
+    .slide h1 {
+        bottom: 3rem;
+        font-size: 2rem;
+    }
+    
+    .adress {
+        bottom: -1rem;
+        font-size: 1.5rem;
+    }
 
     .grid_col {
         display: block;

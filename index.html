@@ -55,40 +55,38 @@
 <!------- Carousel ------>
     <section id="carousel">
         <div class="slider_navigation">
-            <a href="#slide-1"><img src="images/pizza-slice.png" alt="Envie d'une pizza ?" width="40" height="40"></a>
-            <a href="#slide-2"><img src="images/salad.png" alt="Envie de plat de saison ?" width="40" height="40"></a>
-            <a href="#slide-3"><img src="images/sandwich.png" alt="Envie d'un sandwich ?" width="40" height="40"></a>
-            <a href="#slide-4"><img src="images/cheeseSandwich.png" alt="Envie d'un croc monsieur ?" width="40" height="40"></a>
-            <a href="#slide-5"><img src="images/ramen.png" alt="Envie d'une pizza ?" width="40" height="40"></a>
+            <span class="dot active" onclick="changeSlide(0)"><img src="images/pizza-slice.png" alt="Envie d'une pizza ?" width="40" height="40"></span>
+            <span class="dot" onclick="changeSlide(1)"><img src="images/salad.png" alt="Envie de plat de saison ?" width="40" height="40"></span>
+            <span class="dot" onclick="changeSlide(2)"><img src="images/sandwich.png" alt="Envie d'un sandwich ?" width="40" height="40"></span>
+            <span class="dot" onclick="changeSlide(3)"><img src="images/cheeseSandwich.png" alt="Envie d'un croc monsieur ?" width="40" height="40"></span>
+            <span class="dot" onclick="changeSlide(4)"><img src="images/ramen.png" alt="Envie d'une pizza ?" width="40" height="40"></span>
         </div>
         <div class="slider">
-            <div class="slides">
-                <div class="slide" id="slide-1">
-                    <h1>Chez Gepetto</h1>
-                    <p class="adress">- 6 Rue Rallier du Baty, 35000 Rennes -</p>
-                    <img src="https://lh5.googleusercontent.com/p/AF1QipOmr-uK8i6vjyI5ua2T1BKpD_MreWGDHTPAVMAQ=s435-k-no">
-                </div>
-                <div class="slide" id="slide-2">
-                    <h1>Satiõ</h1>
-                    <p class="adress">- 32 Rue Vasselot, 35000 Rennes -</p>
-                    <img src="images/satio.png">
-                </div>
-                <div class="slide" id="slide-3">
-                    <h1>Mokka House Coffee</h1>
-                    <p class="adress">- 14 Rue le Bastard, 35000 Rennes -</p>
-                    <img src="images/mokkaCoffeeHouse.png">
-                </div>
-                <div class="slide" id="slide-4">
-                    <h1>Banco</h1>
-                    <p class="adress">- 13 Rue d'Antrain, 35000 Rennes -</p>
-                    <img src="images/banco.png">
-                </div>
-                <div class="slide" id="slide-5">
-                    <h1>Le Fuji</h1>
-                    <p class="adress">- 4 Rue Derval, 35000 Rennes -</p>
-                    <img src="images/leFuji.png">
-                </div>
-            </div> 
+            <div class="slide" id="slide-1">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipOmr-uK8i6vjyI5ua2T1BKpD_MreWGDHTPAVMAQ=s435-k-no">
+                <h1>Chez Gepetto</h1>
+                <p class="adress">- 6 Rue Rallier du Baty, 35000 Rennes -</p>
+            </div>
+            <div class="slide" id="slide-2">
+                <img src="images/satio.png">
+                <h1>Satiõ</h1>
+                <p class="adress">- 32 Rue Vasselot, 35000 Rennes -</p>
+            </div>
+            <div class="slide" id="slide-3">
+                <img src="images/mokkaCoffeeHouse.png">
+                <h1>Mokka House Coffee</h1>
+                <p class="adress">- 14 Rue le Bastard, 35000 Rennes -</p>
+            </div>
+            <div class="slide" id="slide-4">
+                <img src="images/banco.png">
+                <h1>Banco</h1>
+                <p class="adress">- 13 Rue d'Antrain, 35000 Rennes -</p>
+            </div>
+            <div class="slide" id="slide-5">
+                <img src="images/leFuji.png">
+                <h1>Le Fuji</h1>
+                <p class="adress">- 4 Rue Derval, 35000 Rennes -</p>
+            </div>
         </div>
     </section>
 
@@ -112,7 +110,7 @@
                 <div class="restaurant_layer">
                     <a href="https://www.google.com/maps/place/Fuji+Restaurant/@48.1113783,-1.6787381,740m/data=!3m2!1e3!4b1!4m5!3m4!1s0x480ede35b843dde3:0x2ed901ab3301d41e!8m2!3d48.1113747!4d-1.6765494"> 
                         <h3>Le Fuji</h3>
-                        <p>plats japonais - bel endroit - €€</p>
+                        <p>Plats japonais - Bel endroit - €€</p>
                     </a>
                 </div>
             </div>
@@ -121,7 +119,7 @@
                 <div class="restaurant_layer">
                     <a href="http://satio-restaurant.fr/">
                         <h3>Satiõ</h3>
-                        <p>repas de saison - ambiance nature - €€</p>
+                        <p>Repas de saison - Ambiance nature - €€</p>
                     </a>
                 </div>
             </div>
@@ -130,7 +128,7 @@
                 <div class="restaurant_layer">
                     <a href="https://www.toast-it.fr/">
                         <h3>Toast It</h3>
-                        <p>street food - fromage - €</p>
+                        <p>Street food - Fromage - €</p>
                     </a>
                 </div>
             </div>
@@ -191,15 +189,33 @@
     </footer>
 
 <!------------- JavaScript ------------->
-   <!-- <script>
-        var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.visibility="visible";
-        }
-        function hideMenu(){
-            navLinks.style.visibility="hidden";
-        }
-   </script> -->
+   <script>
+    // var navLinks = document.getElementById("navLinks");
+    //     function showMenu(){
+    //         navLinks.style.visibility="visible";
+    //     }
+    //     function hideMenu(){
+    //         navLinks.style.visibility="hidden";
+    //     }
+
+        var slides = document.querySelectorAll('.slide');
+        var dots = document.querySelectorAll('.dot');
+        var currentSlide = 0; // index of the first slide 
+        const interval = 3000; // duration(speed) of the slide
+
+        function changeSlide(n) {
+            for (var i = 0; i < slides.length; i++) { // reset
+                slides[i].style.opacity = 0;
+                dots[i].className = dots[i].className.replace(' active', '');
+            }
+
+            currentSlide = n;
+
+            slides[currentSlide].style.opacity = 1;
+            dots[currentSlide].className += ' active';
+}
+
+   </script> 
 
 </body>
 </html>
