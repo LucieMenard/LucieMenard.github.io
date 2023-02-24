@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trouver un restaurant</title>
@@ -16,50 +17,58 @@
         <a href="index.html"><i class="fa fa-cutlery fa-6x"></i></a>
         <nav>
             <span class="nav-links">
-                <!-- <i class="fa fa-times-circle" onclick="hideMenu()"></i> -->
                 <ul>
                     <li><a href="#home">ACCUEIL</a></li>
                     <li><a href="#carousel">TROUVER L'INSPIRATION</a></li>
                     <li><a href="#list">PARCOURIR NOS RECOMMANDATIONS</a></li>
                 </ul>
             </span>
-            <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
         </nav>
     </div>
     <div class="wave" id="wave_header">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
         </svg>
     </div>
 </header>
 
 
 <body>
- <!------- Home ------>
-   <section id="home">
+    <!------- Home ------>
+    <section id="home">
         <div class="home_text">
             <h1>Trouvons votre prochain repas</h1>
             <h2>Vous êtes à la recherche d'un lieu pour vous régaler ce midi ?</h2>
-            <p>Ne cherchez plus, bienvenu sur ma page "Trouver mon prochain repas", <br> nous allons vous guider dans votre choix !</p>
+            <p>Ne cherchez plus, bienvenu sur ma page "Trouver mon prochain repas", <br> nous allons vous guider dans
+                votre choix !</p>
             <a href="#carousel" class="button redirection_button">Je veux trouver mon prochain repas...</a>
         </div>
     </section>
 
- <!------- Transition ------>
+    <!------- Transition ------>
     <div id="wave_top" class="wave">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
         </svg>
     </div>
 
-<!------- Carousel ------>
+    <!------- Carousel ------>
     <section id="carousel">
         <div class="slider_navigation">
-            <span class="dot active" onclick="changeSlide(0)"><img src="images/pizza-slice.png" alt="Envie d'une pizza ?" width="40" height="40"></span>
-            <span class="dot" onclick="changeSlide(1)"><img src="images/salad.png" alt="Envie de plat de saison ?" width="40" height="40"></span>
-            <span class="dot" onclick="changeSlide(2)"><img src="images/sandwich.png" alt="Envie d'un sandwich ?" width="40" height="40"></span>
-            <span class="dot" onclick="changeSlide(3)"><img src="images/cheeseSandwich.png" alt="Envie d'un croc monsieur ?" width="40" height="40"></span>
-            <span class="dot" onclick="changeSlide(4)"><img src="images/ramen.png" alt="Envie d'une pizza ?" width="40" height="40"></span>
+            <span class="dot active" onclick="changeSlide(0)"><img src="images/pizza-slice.png"
+                    alt="Envie d'une pizza ?" width="40" height="40"></span>
+            <span class="dot" onclick="changeSlide(1)"><img src="images/salad.png" alt="Envie de plat de saison ?"
+                    width="40" height="40"></span>
+            <span class="dot" onclick="changeSlide(2)"><img src="images/sandwich.png" alt="Envie d'un sandwich ?"
+                    width="40" height="40"></span>
+            <span class="dot" onclick="changeSlide(3)"><img src="images/cheeseSandwich.png"
+                    alt="Envie d'un croc monsieur ?" width="40" height="40"></span>
+            <span class="dot" onclick="changeSlide(4)"><img src="images/ramen.png" alt="Envie d'une pizza ?" width="40"
+                    height="40"></span>
         </div>
         <div class="slider">
             <div class="slide" id="slide-1">
@@ -90,32 +99,41 @@
         </div>
     </section>
 
-<!------- Transition ------>
-     <div id="wave_bottom" class="wave">
+    <!------- Transition ------>
+    <div id="wave_bottom" class="wave">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25" class="shape-fill"></path>
+            <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5" class="shape-fill"></path>
+            <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill"></path>
         </svg>
     </div>
 
-<!------ List of restaurants ------>
+    <!------ List of restaurants ------>
     <section id="list">
         <h2>Trouvez de l'inspiration dans notre sélection :</h2>
         <p>Retrouvez ici notre sélection du moment de restaurant que nous avons appréciés.</p>
 
         <div class="grid">
             <div class="grid_col">
-                <img src="https://lh5.googleusercontent.com/p/AF1QipNw75AoxCHcuJwjbxYbEUVZ5oHE0XJ5h9aCtQsM=w203-h270-k-no" alt="Rejoindre le site web du restaurant Le Fuji">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipNw75AoxCHcuJwjbxYbEUVZ5oHE0XJ5h9aCtQsM=w203-h270-k-no"
+                    alt="Rejoindre le site web du restaurant Le Fuji">
                 <div class="restaurant_layer">
-                    <a href="https://www.google.com/maps/place/Fuji+Restaurant/@48.1113783,-1.6787381,740m/data=!3m2!1e3!4b1!4m5!3m4!1s0x480ede35b843dde3:0x2ed901ab3301d41e!8m2!3d48.1113747!4d-1.6765494"> 
+                    <a
+                        href="https://www.google.com/maps/place/Fuji+Restaurant/@48.1113783,-1.6787381,740m/data=!3m2!1e3!4b1!4m5!3m4!1s0x480ede35b843dde3:0x2ed901ab3301d41e!8m2!3d48.1113747!4d-1.6765494">
                         <h3>Le Fuji</h3>
                         <p>Plats japonais - Bel endroit - €€</p>
                     </a>
                 </div>
             </div>
             <div class="grid_col">
-                <img src="https://lh5.googleusercontent.com/p/AF1QipMZeMXFd_piQeKZVK8gXvhgd8Nt1FdbvC3iSkMr=w203-h203-k-no" alt="Rejoindre le site web du restaurant Satio">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMZeMXFd_piQeKZVK8gXvhgd8Nt1FdbvC3iSkMr=w203-h203-k-no"
+                    alt="Rejoindre le site web du restaurant Satio">
                 <div class="restaurant_layer">
                     <a href="http://satio-restaurant.fr/">
                         <h3>Satiõ</h3>
@@ -133,7 +151,8 @@
                 </div>
             </div>
             <div class="grid_col">
-                <img src="https://lh5.googleusercontent.com/p/AF1QipN8uDjO3vJy5ZpHGsSwZOqtEe5sqoU1E5Yj6pZY=w203-h270-k-no" alt="Rejoindre le site web du restaurant Chez Gepetto">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipN8uDjO3vJy5ZpHGsSwZOqtEe5sqoU1E5Yj6pZY=w203-h270-k-no"
+                    alt="Rejoindre le site web du restaurant Chez Gepetto">
                 <div class="restaurant_layer">
                     <a href="https://chezgeppetto.com/">
                         <h3>Chez Gepetto</h3>
@@ -142,18 +161,21 @@
                 </div>
             </div>
             <div class="grid_col">
-                <img src="https://lh5.googleusercontent.com/p/AF1QipMSTDpmTRZHibbnv_utLWhJ_4a-3UsjkqiodB0=w203-h270-k-no" alt="Rejoindre le site web du restaurant La Saint George">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMSTDpmTRZHibbnv_utLWhJ_4a-3UsjkqiodB0=w203-h270-k-no"
+                    alt="Rejoindre le site web du restaurant La Saint George">
                 <div class="restaurant_layer">
-                        <a href="https://www.creperie-saintgeorges.fr/">
-                            <h3>La Saint George</h3>
-                            <p> L'ancien Rennes - Belle galette - €</p>
-                        </a>
+                    <a href="https://www.creperie-saintgeorges.fr/">
+                        <h3>La Saint George</h3>
+                        <p> L'ancien Rennes - Belle galette - €</p>
+                    </a>
                 </div>
             </div>
             <div class="grid_col">
-                <img src="https://lh5.googleusercontent.com/p/AF1QipOg2MTR9fc_HO5znI5r5iZsRfQBUISmkYWHzJdD=w203-h270-k-no" alt="Rejoindre le site web du restaurant 7 grammes">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipOg2MTR9fc_HO5znI5r5iZsRfQBUISmkYWHzJdD=w203-h270-k-no"
+                    alt="Rejoindre le site web du restaurant 7 grammes">
                 <div class="restaurant_layer">
-                    <a href="https://www.google.com/maps/place/7+grammes/@48.1150221,-1.680968,17z/data=!3m1!4b1!4m5!3m4!1s0x480ede36e13bc631:0xce82e6f686c59a74!8m2!3d48.1150221!4d-1.6787793">
+                    <a
+                        href="https://www.google.com/maps/place/7+grammes/@48.1150221,-1.680968,17z/data=!3m1!4b1!4m5!3m4!1s0x480ede36e13bc631:0xce82e6f686c59a74!8m2!3d48.1150221!4d-1.6787793">
                         <h3>7 grammes</h3>
                         <p> Plat vegan, healthy et de saison - Lieu cosy- €</p>
                     </a>
@@ -162,14 +184,16 @@
         </div>
     </section>
 
-<!------ Transition ------>
+    <!------ Transition ------>
     <div id="wave_footer" class="wave">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
         </svg>
     </div>
 
-<!------ Footer ------>
+    <!------ Footer ------>
     <footer>
         <div class="contact">
             <h1>
@@ -188,16 +212,8 @@
         </span>
     </footer>
 
-<!------------- JavaScript ------------->
-   <script>
-    // var navLinks = document.getElementById("navLinks");
-    //     function showMenu(){
-    //         navLinks.style.visibility="visible";
-    //     }
-    //     function hideMenu(){
-    //         navLinks.style.visibility="hidden";
-    //     }
-
+    <!------------- JavaScript ------------->
+    <script>
         var slides = document.querySelectorAll('.slide');
         var dots = document.querySelectorAll('.dot');
         var currentSlide = 0; // index of the first slide 
@@ -213,9 +229,9 @@
 
             slides[currentSlide].style.opacity = 1;
             dots[currentSlide].className += ' active';
-}
-
-   </script> 
+        }
+    </script>
 
 </body>
+
 </html>
