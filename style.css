@@ -8,6 +8,7 @@
     --second-color: #D1512D;
     --detail-color: #411530;
     scroll-behavior: smooth;
+    text-align: center;
 }
 
 body {
@@ -44,7 +45,7 @@ header {
     width: 100%;
     top: 0;
     box-sizing: border-box;
-    padding: 1%;
+    padding: 1% 1% 0% 1%;
     background-image: linear-gradient(to right, var(--second-color), var(--first-color), var(--second-color));
     background-position: center;
     background-size: cover;
@@ -61,7 +62,7 @@ header {
 
 nav {
     align-items: center;
-    padding: 1% 6%
+    padding: 1% 1%
 }
 
 .nav-links {
@@ -113,6 +114,7 @@ nav {
     width: 100%;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 5rem;
     display: flex;
     flex-direction: column;
@@ -120,8 +122,8 @@ nav {
     padding-bottom: 15rem;
 }
 
-.home_text p {
-    text-align: center;
+.home_text p{
+    color: var(--detail-color);
 }
 
 .redirection_button {
@@ -131,12 +133,12 @@ nav {
     font-weight: bold;
     position: relative;
     cursor: pointer;
-    background: transparent;
+    background: var(--first-color);
     box-shadow: 2px 2px 7px var(--detail-color);
 }
 
 .redirection_button:hover {
-    background: var(--first-color);
+    background: var(--second-color);
     transition: 1s;
 }
 
@@ -189,7 +191,6 @@ nav {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-
 }
 
 #wave_footer svg {
@@ -309,6 +310,10 @@ nav {
 /* ------ list ------- */
 #list {
     background-color: var(--second-color);
+}
+
+#list h2, p{
+    color: var(--bg-color);
 }
 
 .grid {
@@ -465,7 +470,7 @@ footer {
         gap: 5%;
     }
     .grid_col {
-        display : flex;
+        display :block;
         flex-direction: column;
     }
 
